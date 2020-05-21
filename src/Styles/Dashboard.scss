@@ -1,0 +1,28 @@
+.dashboard {
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    width: 80%;
+    flex-flow: row;
+    flex-direction: row;
+    //border: 1px solid black;
+
+    .photo {
+        width: 40%;
+        //border: 1px solid black;
+
+        img {
+            width: 90%;
+            padding: 0.5em;
+            border-radius: 7em;
+        }
+    }
+
+    .short-info {
+        width: 60%;
+        padding: 0.5em;
+        text-align: left;
+        //border: 1px solid black;
+    }
+  }
+  
