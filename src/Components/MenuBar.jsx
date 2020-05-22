@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Styles/MenuBar.scss';
 
 function MenuBar() {
   return (

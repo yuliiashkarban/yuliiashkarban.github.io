@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Styles/Home.scss'
 import Dashboard from './Dashboard';
 import MenuBar from './MenuBar';
 
