@@ -5,13 +5,13 @@ function MenuBar() {
     <div className="menubar">
 
       <ul>
-        <li>home</li>
+        <li><a href="/">home</a></li>
         <li>•</li>
-        <li>about</li>
+        <li><a href="/about">about</a></li>
         <li>•</li>
-        <li>portfolio</li>
+        <li><a href="/portfolio">portfolio</a></li>
         <li>•</li>
-        <li>contact</li>
+        <li><a href="/contact">contact</a></li>
       </ul>
     </div>
   );
