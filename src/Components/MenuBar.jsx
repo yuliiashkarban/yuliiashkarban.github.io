@@ -1,17 +1,18 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function MenuBar() {
   return (
     <div className="menubar">
 
       <ul>
-        <li><a href="/">home</a></li>
+        <li><Link to="/">home</Link></li>
         <li>•</li>
-        <li><a href="/about">about</a></li>
+        <li><Link to="/about">about</Link></li>
         <li>•</li>
-        <li><a href="/portfolio">portfolio</a></li>
+        <li><Link to="/portfolio">portfolio</Link></li>
         <li>•</li>
-        <li><a href="/contact">contact</a></li>
+        <li><Link to="/contact">contact</Link></li>
       </ul>
     </div>
   );
