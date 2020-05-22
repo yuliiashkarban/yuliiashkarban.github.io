@@ -1,14 +1,19 @@
+$color: $color-black;
+$font-family: Allyca, arial;
+$size: 45px;
+
 .menubar {
     text-align: center;
     height: 3em;
     width: 80%;
     display: flex;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     align-items: center;
     justify-content: center;
-    color: black;
-
+    color: $color;
+    font-family: $font-family;
+    font-size: $size;
 
     ul li{
       display: inline;
@@ -16,17 +21,18 @@
     }
 
     a {
-      color: black;
+      color: $color;
       text-decoration: none;
+      font-family: $font-family;
     }
 
     a:hover {
-      color: black;
+      color: $color;
       text-decoration: none;
     }
 
     a:visited {
-      color: black;
+      color: $color;
       text-decoration: none;
     }
   }
