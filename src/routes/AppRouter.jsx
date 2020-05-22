@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import history from "../history";
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
@@ -9,7 +9,7 @@ import MenuBar from "../components/MenuBar"
 
 const AppRouter = () => {
   return (
-    <Router history={history} basename={process.env.PUBLIC_URL}>
+    <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
       <div className="app">
         <MenuBar />
         <Switch>
@@ -21,7 +21,7 @@ const AppRouter = () => {
           <Route path="/contact" component={ContactPage} exact={true} />
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 
