@@ -6,6 +6,7 @@ import AboutPage from "./AboutPage";
 import PortfolioPage from "./PortfolioPage";
 import ContactPage from "./ContactPage";
 import MenuBar from "../components/MenuBar"
+import Footer from "../components/Footer";
 
 const AppRouter = () => {
   return (
@@ -20,6 +21,7 @@ const AppRouter = () => {
           <Route path="/portfolio" component={PortfolioPage} exact={true} />
           <Route path="/contact" component={ContactPage} exact={true} />
         </Switch>
+      
       </div>
     </Router>
   );
