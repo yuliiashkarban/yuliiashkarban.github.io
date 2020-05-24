@@ -21,7 +21,7 @@ const AppRouter = () => {
           <Route path="/portfolio" component={PortfolioPage} exact={true} />
           <Route path="/contact" component={ContactPage} exact={true} />
         </Switch>
-      
+      <Footer />
       </div>
     </Router>
   );

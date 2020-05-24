@@ -5,8 +5,17 @@ html, body, #root {
   background-blend-mode: screen;
   font-family: $default-font;
   font-size: $default-font-size;
+
+  min-height: 100% !important;
+  height: 100%;
+  margin: 0;
 }
-  
+
+a, a:hover, a:visited {
+  color: $color-black;
+  text-decoration: none;
+}
+
 .content-container {
   width: 70%;
   display: flex;
@@ -14,5 +23,5 @@ html, body, #root {
   align-items: center;
   flex-flow: column;
   flex-direction: column;
-  //border: 1px solid black;
+  height: 100vh;
 }
