@@ -1,0 +1,60 @@
+.contact-form {
+  grid-row: 2;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+
+  * {
+    width: 70%;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: $default-font;
+    background-color: $input-color;
+    resize: none;
+    border: none;
+    border-radius: 2rem;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: $color-black;
+    box-shadow: 0 0 0 30px $input-color inset;
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+    background-color: $button-color;
+  }
+
+  textarea {
+    border-radius: 0px;
+    margin: 0;
+    width: 90%;
+    margin-top: 0.25rem;
+    padding: 0rem 0.5rem 0rem 0rem;
+    min-height: 8rem;
+    max-height: 14rem;
+  }
+
+  .textarea-wrapper {
+    width: calc(70% + 2rem);
+    background-color: $input-color;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $button-color;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $button-hover-color;
+  }
+}

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 function AboutPage() {
   return (
-    <div className="content-container">
-        <p>About Page</p>
+    <div className="content-container ">
+      <p>About Page</p>
     </div>
   );
 }

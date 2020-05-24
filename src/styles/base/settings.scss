@@ -1,9 +1,22 @@
-@font-face { font-family: Allyca; src: url('/fonts/Allyca.otf'); }
-@font-face { font-family: BioRhyme; src: url('/fonts/BioRhyme-Light.ttf'); }
-@font-face { font-family: BioRhyme; src: url('/fonts/BioRhyme-Bold.ttf'); font-weight: bold;}
+@font-face {
+  font-family: Allyca;
+  src: url("/fonts/Allyca.otf");
+}
+@font-face {
+  font-family: BioRhyme;
+  src: url("/fonts/BioRhyme-Light.ttf");
+}
+@font-face {
+  font-family: BioRhyme;
+  src: url("/fonts/BioRhyme-Bold.ttf");
+  font-weight: bold;
+}
 
 $desktop-breakpoint: 45rem;
 $default-font-size: 20px;
 
 $color-black: #000;
+$input-color: #fff;
+$button-color: #fff;
+$button-hover-color: #f8f8f8;
 $default-font: BioRhyme;
