@@ -26,18 +26,38 @@ class ContactForm extends Component {
   };
 
   handleSubmit = (event) => {
+    event.preventDefault();
     console.warn("TODO: Validate inputs");
-    console.warn("TODO: Submit request");
 
-    if (event) {
-      event.preventDefault();
-    }
+    this.sendEmail(event.target);
+  };
 
-    this.setState({
-      name: "",
-      email: "",
-      message: ""
-    });
+  sendEmail = (form) => {
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        this.setState({
+          name: "",
+          email: "",
+          message: ""
+        });
+        console.warn("TODO: Show info: Email succesfully sent.");
+      } else {
+        console.error(
+          "An error occured while sending email: " + xhr.responseText
+        );
+        console.warn("TODO: Show error: Error while sending email.");
+        //Do not change state
+      }
+    };
+
+    xhr.send(data);
   };
 
   onWrapperClicked = () => {
@@ -46,7 +66,12 @@ class ContactForm extends Component {
 
   render = () => {
     return (
-      <form className="contact-form" onSubmit={this.handleSubmit}>
+      <form
+        className="contact-form"
+        onSubmit={this.handleSubmit}
+        action="https://formspree.io/mlepjjkd"
+        method="POST"
+      >
         <input
           type="text"
           id="name"
