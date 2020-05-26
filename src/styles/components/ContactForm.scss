@@ -1,3 +1,5 @@
+$width: 50%;
+
 .contact-form {
   grid-row: 2;
   align-items: center;
@@ -5,7 +7,7 @@
   flex-flow: column;
 
   * {
-    width: 70%;
+    width: $width;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -40,7 +42,7 @@
   }
 
   .textarea-wrapper {
-    width: calc(70% + 2rem);
+    width: calc(#{$width} + 2rem);
     background-color: $input-color;
     padding: 10px;
     padding-left: 0px;
@@ -56,5 +58,23 @@
 
   input[type="submit"]:hover {
     background-color: $button-hover-color;
+  }
+}
+
+@media screen and (max-width: $desktop-breakpoint) {
+  .contact-form {
+    * {
+      width: 85%;
+    }
+
+    .textarea-wrapper {
+      width: calc(85% + 2rem);
+    }
+
+    input[type="submit"] {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: $button-color;
+    }
   }
 }

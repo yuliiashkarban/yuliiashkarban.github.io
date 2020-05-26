@@ -25,7 +25,7 @@ function ContactPage() {
         </div>
         <div className="link">
           <img src="icons/phone.svg" alt="phone-icon" className="icon" />
-          <a href="tel:+48 578 003 732">+48578003732</a>
+          <a href="tel:+48578003732">+48 578 003 732</a>
         </div>
         <div className="link">
           <img src="icons/email.svg" alt="email-icon" className="icon" />

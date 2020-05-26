@@ -1,27 +1,48 @@
 $color: $color-black;
 $font-family: Allyca, arial;
 $size: 45px;
+$mobile-size: 20px;
+$increaseBy: 5px;
 
 .menubar {
-    text-align: center;
-    height: 3em;
-    width: 80%;
-    display: flex;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    align-items: center;
-    justify-content: center;
-    color: $color;
-    font-family: $font-family;
-    font-size: $size;
+  text-align: center;
+  height: 3em;
+  width: 80%;
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: center;
+  color: $color;
+  font-family: $font-family;
+  font-size: $size;
 
-    ul li{
-      display: inline;
-      margin: 0.5em;
+  ul li {
+    display: inline;
+    margin: 0.5em;
+  }
+
+  a:hover {
+    font-size: calc(#{$size} + #{$increaseBy});
+  }
+}
+
+@media screen and (max-width: $desktop-breakpoint) {
+  .menubar {
+    width: 100%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: $mobile-size;
+
+    ul {
+      padding-inline-start: 0px;
+    }
+    ul li {
+      margin: 0.25em;
     }
 
     a:hover {
-      font-size: 50px;
+      font-size: calc(#{$mobile-size} + #{$increaseBy});
     }
   }
-  
+}

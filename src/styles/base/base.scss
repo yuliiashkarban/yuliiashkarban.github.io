@@ -1,8 +1,14 @@
-html, body, #root {
+html,
+body,
+#root {
   min-width: fit-content;
   color: $color-black;
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
-  //background-image: radial-gradient(73% 147% at 0 0, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146% at 0 0, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
   background-blend-mode: screen;
   font-family: $default-font;
   font-size: $default-font-size;
@@ -12,16 +18,30 @@ html, body, #root {
   margin: 0;
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
   color: $color-black;
   text-decoration: none;
 }
 
 .content-container {
-  width: 60%;
+  width: 80%;
   display: flex;
   align-items: center;
   flex-flow: column;
   flex-direction: column;
-  height: 100vh;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: $desktop-breakpoint) {
+  html,
+  body,
+  #root {
+    font-size: $mobile-font-size;
+  }
+
+  .content-container {
+    width: 95%;
+  }
 }
