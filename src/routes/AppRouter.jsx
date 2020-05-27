@@ -5,7 +5,7 @@ import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import PortfolioPage from "./PortfolioPage";
 import ContactPage from "./ContactPage";
-import MenuBar from "../components/MenuBar"
+import MenuBar from "../components/MenuBar";
 import Footer from "../components/Footer";
 
 const AppRouter = () => {
@@ -21,7 +21,7 @@ const AppRouter = () => {
           <Route path="/portfolio" component={PortfolioPage} exact={true} />
           <Route path="/contact" component={ContactPage} exact={true} />
         </Switch>
-      <Footer />
+        <Footer />
       </div>
     </Router>
   );

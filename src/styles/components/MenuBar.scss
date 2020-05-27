@@ -2,16 +2,14 @@ $color: $color-black;
 $font-family: Allyca, arial;
 $size: 2.8125rem;
 $mobile-size: 1.25rem;
-$increaseBy: 0.3rem;
+$increaseBy: 1.1;
 
 .menubar {
   text-align: center;
-  height: 3em;
   width: 80%;
   display: flex;
   margin-top: 2em;
   margin-bottom: 1em;
-  align-items: center;
   justify-content: center;
   color: $color;
   font-family: $font-family;
@@ -22,8 +20,16 @@ $increaseBy: 0.3rem;
     margin: 0.5em;
   }
 
+  a {
+    display: inline-block;
+  }
+
   a:hover {
-    font-size: calc(#{$size} + #{$increaseBy});
+    transform: scale(#{$increaseBy});
+    -ms-transform: scale(#{$increaseBy});
+    -webkit-transform: scale (#{$increaseBy});
+    -moz-transform: scale(#{$increaseBy});
+    -o-transform: scale(#{$increaseBy});
   }
 }
 
@@ -38,11 +44,7 @@ $increaseBy: 0.3rem;
       padding-inline-start: 0rem;
     }
     ul li {
-      margin: 0.25em;
-    }
-
-    a:hover {
-      font-size: calc(#{$mobile-size} + #{$increaseBy});
+      margin: 0.5em;
     }
   }
 }
