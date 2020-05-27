@@ -1,8 +1,8 @@
 $color: $color-black;
 $font-family: Allyca, arial;
-$size: 45px;
-$mobile-size: 20px;
-$increaseBy: 5px;
+$size: 2.8125rem;
+$mobile-size: 1.25rem;
+$increaseBy: 0.3rem;
 
 .menubar {
   text-align: center;
@@ -35,7 +35,7 @@ $increaseBy: 5px;
     font-size: $mobile-size;
 
     ul {
-      padding-inline-start: 0px;
+      padding-inline-start: 0rem;
     }
     ul li {
       margin: 0.25em;

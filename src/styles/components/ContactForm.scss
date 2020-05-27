@@ -22,7 +22,7 @@ $width: 50%;
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus {
     -webkit-text-fill-color: $color-black;
-    box-shadow: 0 0 0 30px $input-color inset;
+    box-shadow: 0 0 0 1.875rem $input-color inset;
   }
 
   textarea:focus,
@@ -32,7 +32,7 @@ $width: 50%;
   }
 
   textarea {
-    border-radius: 0px;
+    border-radius: 0rem;
     margin: 0;
     width: 90%;
     margin-top: 0.25rem;
@@ -44,9 +44,9 @@ $width: 50%;
   .textarea-wrapper {
     width: calc(#{$width} + 2rem);
     background-color: $input-color;
-    padding: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0.625rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 
   input[type="submit"] {
@@ -54,6 +54,9 @@ $width: 50%;
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: $button-color;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
   }
 
   input[type="submit"]:hover {

@@ -81,7 +81,7 @@ class ContactForm extends Component {
           value={this.state.name}
         />
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           placeholder="Email"
