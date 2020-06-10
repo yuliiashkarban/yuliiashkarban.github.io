@@ -6,7 +6,7 @@ import AboutPage from "./AboutPage";
 import PortfolioPage from "./PortfolioPage";
 import ContactPage from "./ContactPage";
 import MenuBar from "../components/MenuBar";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"
 
 const AppRouter = () => {
   return (

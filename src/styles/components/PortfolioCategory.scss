@@ -1,0 +1,34 @@
+.portfolioCategory {
+  margin-top: 2em;
+  width: 100%;
+
+  .categoryName {
+  }
+
+  .portfolioImages {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 3em;
+  }
+
+  .collapse {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .collapse.in {
+    max-height: unset;
+  }
+
+  .collapsible {
+    cursor: pointer;
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}
