@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (max-width: $desktop-breakpoint) {
+@media screen and (max-width: $mobile-breakpoint) {
   .contact-page {
     display: flex;
     flex-flow: column;

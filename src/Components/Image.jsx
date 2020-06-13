@@ -30,9 +30,9 @@ class Image extends Component {
       return null;
     }
 
-    let items = config.categories.map((category) => category.items);
-    let images = [].concat.apply([], items);
-    let image = images.filter((x) => x.id === this.state.selectedImageId)[0];
+    const items = config.categories.map((category) => category.items);
+    const images = [].concat.apply([], items);
+    const image = images.filter((x) => x.id === this.state.selectedImageId)[0];
 
     const imageUrl = `/portfolio/${image.fileName}`;
 
@@ -43,7 +43,11 @@ class Image extends Component {
         onClick={this.close}
         style={{ top: `${window.pageYOffset}px` }}
       >
-        <img src={imageUrl} alt="" />
+        <div className="image">
+          <img src={imageUrl} alt="" />
+          {image.name != "" && <h2>{image.name}</h2>}
+          {image.description != "" && <p>{image.description}</p>}
+        </div>
       </div>
     );
   };

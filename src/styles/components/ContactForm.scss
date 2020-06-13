@@ -64,7 +64,7 @@ $width: 50%;
   }
 }
 
-@media screen and (max-width: $desktop-breakpoint) {
+@media screen and (max-width: $mobile-breakpoint) {
   .contact-form {
     * {
       width: 85%;

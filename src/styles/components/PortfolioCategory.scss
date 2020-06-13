@@ -32,3 +32,14 @@
     background-color: transparent;
   }
 }
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .portfolioCategory {
+    margin-top: 0;
+
+    .portfolioImages {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+}

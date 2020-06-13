@@ -39,14 +39,7 @@ a:visited {
   height: 100%;
   overflow: hidden;
 }
-
-@media screen and (max-width: $desktop-breakpoint) {
-  html,
-  body,
-  #root {
-    font-size: $mobile-font-size;
-  }
-
+@media screen and (max-width: $tablet-breakpoint) {
   .content-container {
     width: 95%;
   }
