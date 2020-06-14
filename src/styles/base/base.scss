@@ -12,9 +12,7 @@ body,
   background-blend-mode: screen;
   font-family: $default-font;
   font-size: $default-font-size;
-
   min-height: 100vh !important;
-  //height: 100%;
   margin: 0;
 }
 
@@ -35,10 +33,10 @@ a:visited {
 }
 
 .no-scroll {
-  margin: 0;
   height: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
 }
+
 @media screen and (max-width: $tablet-breakpoint) {
   .content-container {
     width: 95%;
