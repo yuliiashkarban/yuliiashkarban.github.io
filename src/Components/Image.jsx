@@ -17,6 +17,10 @@ class Image extends Component {
     });
   };
 
+  handleOnTouchStart = (e) => {
+    e.preventDefault();
+  };
+
   componentDidUpdate = (prevProps, prevState) => {
     if (prevState && prevState.selectedImageId !== this.props.selectedImageId) {
       this.setState({
@@ -41,6 +45,7 @@ class Image extends Component {
       <div
         className="image-overflow"
         onClick={this.close}
+        onTouchStart={this.handleOnTouchStart}
         style={{ top: `${window.pageYOffset}px` }}
       >
         <div className="image">
