@@ -1,4 +1,8 @@
-.dashboard {
+.about {
+  width: 100%;
+}
+
+.about-short-description {
   width: 80%;
   text-align: center;
   display: grid;
@@ -18,6 +22,7 @@
   .short-info {
     padding: 0.5em 2em;
     text-align: left;
+    margin: auto;
   }
 
   .portfolio-best-description {
@@ -30,6 +35,14 @@
     grid-column-start: 1;
     grid-column-end: 3;
   }
+}
+
+.about-description {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 3em;
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
